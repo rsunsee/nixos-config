@@ -91,8 +91,6 @@
       obsidian
       yt-dlp
       kew
-      timr-tui
-      btop
       glow
       noctalia-shell
       ghostty
