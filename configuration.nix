@@ -94,6 +94,12 @@
       timr-tui
       btop
       glow
+      noctalia-shell
+      ghostty
+      fastfetch
+      neovim
+      rofi
+      git
     ];
   };
   
@@ -120,16 +126,11 @@
   virtualisation.spiceUSBRedirection.enable = true;
 
   environment.systemPackages = with pkgs; [
-   neovim
    wget
-   fastfetch
-   rofi
-   git
    p7zip
    bluetui
    fzf
    yazi
-   ghostty
    tree
   ];
 
