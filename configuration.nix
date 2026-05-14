@@ -98,7 +98,6 @@
       ghostty
       fastfetch
       neovim
-      rofi
       git
     ];
   };
