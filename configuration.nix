@@ -100,9 +100,6 @@
   # Niri
   programs.niri.enable = true;
 
-  # Hyprland
-  programs.hyprland.enable = true;
-
   # Firefox
   programs.firefox.enable = true;
   
@@ -117,7 +114,6 @@
   nixpkgs.config.allowUnfree = true;
 
   # Virt Manager
-  
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = ["rsunsee"];
   virtualisation.libvirtd.enable = true;
@@ -128,8 +124,6 @@
    wget
    fastfetch
    rofi
-   hyprpaper
-   hyprsunset
    git
    p7zip
    bluetui
