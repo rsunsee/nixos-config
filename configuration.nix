@@ -88,13 +88,14 @@
     description = "rsunsee";
     extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
     packages = with pkgs; [
+      nur.repos.trev.helium
       obsidian
       yt-dlp
       kew
       glow
-      noctalia-shell
       ghostty
       fastfetch
+      noctalia-shell
       neovim
       git
     ];
@@ -102,9 +103,6 @@
   
   # Niri
   programs.niri.enable = true;
-
-  # Firefox
-  programs.firefox.enable = true;
   
   # OhMyZsh
   programs.zsh.enable = true;
