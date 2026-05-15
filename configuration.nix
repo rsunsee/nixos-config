@@ -131,6 +131,7 @@
    fzf
    yazi
    tree
+   bat
   ];
 
   nix.settings.auto-optimise-store = true;
