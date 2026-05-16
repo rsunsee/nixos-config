@@ -98,6 +98,7 @@
       noctalia-shell
       neovim
       git
+      lmstudio
     ];
   };
 
