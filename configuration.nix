@@ -91,7 +91,7 @@
     description = "rsunsee";
     extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
     packages = with pkgs; [
-      nur.repos.trev.helium
+      nur.repos.lonerOrz.helium
       obsidian
       yt-dlp
       kew
