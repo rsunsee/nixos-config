@@ -108,7 +108,10 @@
   fonts.packages = with pkgs; [
     nerd-fonts.iosevka      
   ];
-  
+
+  # LocalSend
+  programs.localsend.enable = true;
+
   # Niri
   programs.niri.enable = true;
 
