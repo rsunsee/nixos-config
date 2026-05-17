@@ -61,7 +61,7 @@
   hardware.graphics.enable = true;
   hardware.nvidia.open = true;
   
-  # Enable sddm
+  # Enable ly
   services.displayManager.ly.enable = true;
 
   # Enable CUPS to print documents.
@@ -111,6 +111,9 @@
   
   # Niri
   programs.niri.enable = true;
+
+  # Upower
+  services.upower.enable = true;
   
   # OhMyZsh
   programs.zsh.enable = true;
