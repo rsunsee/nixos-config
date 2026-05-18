@@ -148,7 +148,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 21d";
+    options = "--delete-older-than 7d";
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
