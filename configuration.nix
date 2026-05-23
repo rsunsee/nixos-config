@@ -55,11 +55,6 @@
 
   # Asus
   services.asusd.enable = true;
-
-  # Nvidia drivers
-  hardware.nvidia.modesetting.enable = true;
-  hardware.graphics.enable = true;
-  hardware.nvidia.open = true;
   
   # Enable ly
   services.displayManager.ly.enable = true;
@@ -91,7 +86,7 @@
     description = "rsunsee";
     extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
     packages = with pkgs; [
-      nur.repos.lonerOrz.helium
+      nur.repos.trev.helium
       obsidian
       yt-dlp
       kew
@@ -141,6 +136,7 @@
    yazi
    tree
    bat
+   vlc
   ];
 
   nix.settings.auto-optimise-store = true;
