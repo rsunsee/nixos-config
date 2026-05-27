@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Latest Kernel
-  boot.kernelPackages = pkgs.linuxPackages_6_6;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -101,7 +101,8 @@
   };
 
   fonts.packages = with pkgs; [
-    nerd-fonts.iosevka      
+    nerd-fonts.iosevka # main font
+    terminus_font # for retro rices only
   ];
 
   # LocalSend
@@ -137,7 +138,7 @@
    tree
    bat
    vlc
-   xwayland
+   cava
   ];
 
   nix.settings.auto-optimise-store = true;
