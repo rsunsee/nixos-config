@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, zen-browser, ... }:
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -97,7 +97,6 @@
       neovim
       git
       lmstudio
-      zen-browser.packages."x86_64-linux".beta
     ];
   };
 
@@ -147,7 +146,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 7d";
+    options = "--delete-older-than 4d";
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
