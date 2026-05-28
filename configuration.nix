@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -82,11 +82,12 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.rsunsee = {
     isNormalUser = true;
-    shell = pkgs.zsh;
+    shell = pkgs.bash;
     description = "rsunsee";
     extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
     packages = with pkgs; [
       nur.repos.trev.helium
+      inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
       obsidian
       yt-dlp
       kew
@@ -115,13 +116,8 @@
   services.upower.enable = true;
   
   # OhMyZsh
-  programs.zsh.enable = true;
+  programs.starship.enable = true;
   
-  programs.zsh.ohMyZsh = {
-    enable = true;
-    theme = "agnoster";
-  };
-
   nixpkgs.config.allowUnfree = true;
 
   # Virt Manager
