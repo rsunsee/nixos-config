@@ -40,6 +40,32 @@
     userEmail = "roger09gg@proton.me";
   };
 
+  programs.fastfetch = {
+    enable = true;
+    settings = {
+      logo = {
+        source = "/home/rsunsee/Pictures/fastfetch/nixowos";
+        # Dependiendo de tu terminal, puedes ajustar el tamaño si es necesario:
+        # width = 28;
+        # height = 12;
+      };
+      display = {
+        separator = " › ";
+      };
+      modules = [
+        "title"
+	"separator"
+	"os"
+        "kernel"
+        "packages"
+	"wm"
+	"terminal"
+	"disk"
+	"publicip"
+      ];
+    };
+  };
+
 
   # Home Manager
   programs.home-manager.enable = true;
