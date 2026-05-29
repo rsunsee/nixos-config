@@ -98,6 +98,7 @@
       neovim
       git
       lmstudio
+      heroic
     ];
   };
 
