@@ -110,21 +110,8 @@
    fzf
    tree
    cava
-   nvd
-   nix-output-monitor
   ];
   
-  # Nix Helper
-  programs.nh = {
-    enable = true;
-    # Activa la limpieza automática del almacenamiento (Garbage Collector)
-    clean.enable = true;
-    # Mantiene las generaciones de los últimos 7 días y mínimo 3 generaciones fijas
-    clean.extraArgs = "--keep-since 7d --keep 3";
-    # Indica la ruta absoluta hacia tu carpeta de configuración de NixOS
-    flake = "/home/rsunsee/nixos-config"; 
-  };
-
   # Nix Store Optimize
   nix.settings.auto-optimise-store = true;
   
