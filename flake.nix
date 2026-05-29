@@ -1,9 +1,8 @@
 {
-  description = "Configuracion modular de NixOS con Flakes y Home Manager";
+  description = "nixos-btw";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    
     nur.url = "github:nix-community/NUR";
     
     zen-browser = {
@@ -29,10 +28,10 @@
         # 1. Tu configuracion base del sistema
         ./configuration.nix
 
-        # 2. El overlay de NUR declarado de forma mas limpia
+        # NUR overlay
         { nixpkgs.overlays = [ nur.overlays.default ]; }
 
-        # 3. Integracion de Home Manager
+        # Home Manager
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;

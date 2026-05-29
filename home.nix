@@ -1,26 +1,47 @@
 { config, pkgs, inputs, ... }:
 
 {
-  # Modifica esto con tu usuario y tu ruta
+  # User Config
   home.username = "rsunsee";
   home.homeDirectory = "/home/rsunsee";
-
-  # No toques esto. Es la versión de compatibilidad inicial.
   home.stateVersion = "25.11"; 
 
-  # Paquetes específicos para tu usuario (cosas CLI o apps)
+  # User Packages
   home.packages = with pkgs; [
+    nur.repos.trev.helium
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    obsidian
+    yt-dlp
+    kew
+    glow
+    ghostty
     fastfetch
-    inputs.zen-browser.packages."x86_64-linux".default
+    noctalia-shell
+    neovim
+    git
+    lmstudio
+    heroic
+    yazi
+    vlc
+
+    # System
+
+    wget
+    p7zip
+    fzf
+    tree
+    cava
   ];
 
-  # Configuración directa de programas mediante Home Manager
+  # Git
   programs.git = {
     enable = true;
     userName = "rsunsee";
     userEmail = "roger09gg@proton.me";
   };
 
-  # Deja que Home Manager se gestione a sí mismo
+
+  # Home Manager
   programs.home-manager.enable = true;
+
 }
