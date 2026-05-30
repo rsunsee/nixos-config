@@ -8,24 +8,21 @@
 
   # User Packages
   home.packages = with pkgs; [
+    # Browsers
     nur.repos.trev.helium
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+
     obsidian
     yt-dlp
     kew
     glow
-    ghostty
-    fastfetch
     noctalia-shell
     neovim
-    git
     lmstudio
-    heroic
     yazi
     vlc
 
     # System
-
     wget
     p7zip
     fzf
@@ -39,15 +36,13 @@
     userName = "rsunsee";
     userEmail = "roger09gg@proton.me";
   };
-
+  
+  # Fastfetch
   programs.fastfetch = {
     enable = true;
     settings = {
       logo = {
         source = "/home/rsunsee/Pictures/fastfetch/nixowos";
-        # Dependiendo de tu terminal, puedes ajustar el tamaño si es necesario:
-        # width = 28;
-        # height = 12;
       };
       display = {
         separator = " › ";
@@ -66,8 +61,25 @@
     };
   };
 
+  #Ghostty
+  programs.ghostty = {
+    enable = true;
+    enableBashIntegration = true;
+    settings = {
 
-  # Home Manager
+      # Font
+      font-family = "Iosevka Nerd Font";
+      font-size = 13;
+
+      # Style
+      background-blur = true;
+      background-opacity = 0.7;
+      window-decoration = false;
+      background-blur-radius = 20;
+    };
+  };
+
+  # let home manager manage itself
   programs.home-manager.enable = true;
 
 }
