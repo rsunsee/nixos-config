@@ -67,7 +67,7 @@
     settings = {
 
       # Font
-      font-family = "Iosevka Nerd Font Mono";
+      font-family = "IosevkaTerm Nerd Font Mono";
       font-size = 13;
 
       # Style
