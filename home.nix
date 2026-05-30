@@ -56,7 +56,6 @@
 	"wm"
 	"terminal"
 	"disk"
-	"publicip"
       ];
     };
   };
@@ -68,7 +67,7 @@
     settings = {
 
       # Font
-      font-family = "Iosevka Nerd Font";
+      font-family = "Iosevka Nerd Font Mono";
       font-size = 13;
 
       # Style
@@ -77,6 +76,23 @@
       window-decoration = false;
       background-blur-radius = 20;
     };
+  };
+
+  # Cursor
+  home.pointerCursor = {
+    gtk.enable = true;
+
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Ice";
+    size = 24;
+  };
+
+  # Font
+  fonts.fontconfig.enable = true;
+  fonts.fontconfig.defaultFonts = {
+    monospace = [ "Iosevka Nerd Font Mono" ];
+    sansSerif = [ "Iosevka Nerd Font Propo" ];
+    serif = [ "Iosevka Nerd Font Propo" ];
   };
 
   # let home manager manage itself
