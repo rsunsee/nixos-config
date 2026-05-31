@@ -21,6 +21,7 @@
     lmstudio
     yazi
     vlc
+    spotify
 
     # System
     wget
@@ -45,7 +46,7 @@
         source = "/home/rsunsee/Pictures/fastfetch/nixowos";
       };
       display = {
-        separator = " › ";
+        separator = " -> ";
       };
       modules = [
         "title"
