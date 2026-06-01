@@ -112,7 +112,7 @@
    tree
    cava
   ];
-  
+
   # Nix Store Optimize
   nix.settings.auto-optimise-store = true;
   
