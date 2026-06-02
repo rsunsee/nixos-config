@@ -15,7 +15,6 @@
     yt-dlp
     kew
     glow
-    noctalia-shell
     neovim
     lmstudio
     yazi
@@ -33,8 +32,13 @@
   # Git
   programs.git = {
     enable = true;
-    userName = "rsunsee";
-    userEmail = "roger09gg@proton.me";
+
+    settings = {
+      user = {
+        name = "rsunsee";
+	email = "roger09gg@proton.me";
+      };
+    };
   };
   
   # Fastfetch
@@ -66,15 +70,13 @@
     enableBashIntegration = true;
     settings = {
 
-      # Font
       font-family = "IosevkaTerm Nerd Font Mono";
       font-size = 13;
-
-      # Style
       background-blur = true;
       background-opacity = 0.7;
       window-decoration = false;
       background-blur-radius = 20;
+
     };
   };
 
