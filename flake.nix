@@ -14,9 +14,15 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell/v5";
+      inputs.nixpkgs.follows = "nixpkgs";
+
+    };
   };
 
-  outputs = { self, nixpkgs, nur, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, nur, home-manager, noctalia, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
