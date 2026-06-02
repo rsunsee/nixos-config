@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780370888,
-        "narHash": "sha256-PRJj9RKTEf/sITycujP1c/BrvLJKMYXzcpwTsXNulXQ=",
+        "lastModified": 1780408569,
+        "narHash": "sha256-s7Tv6FUQThRAvW8En8XVC6HMb0uiikzVccCcCo9u/Bg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "a7a415883195ffbd4dabec8f098f201e6eaaadf8",
+        "rev": "f384af1bec6423a0d4ba1855917ab948f64e5808",
         "type": "github"
       },
       "original": {
@@ -80,11 +80,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780398062,
-        "narHash": "sha256-ixHRBYyC+c996+TcPN39yzWCHBV3vRUvIcGIuNsQ984=",
+        "lastModified": 1780419877,
+        "narHash": "sha256-8ppEAcXX/SDl2A1xBEs69IGZC18Ru7JA7c/fc6Miq2Q=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "f616e7d2e6eeffb762c1011cbce6e7c5c91d000b",
+        "rev": "3a21dc052298a1595922b8df34ac05f95ad332cb",
         "type": "github"
       },
       "original": {
@@ -100,11 +100,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1780373535,
-        "narHash": "sha256-hAAFIDxOUG4GEwZtNObQfjzia7M9pnKix5i4WJPOnxM=",
+        "lastModified": 1780421924,
+        "narHash": "sha256-KJC6MMo0Ye54GLm6wamnhtATtsqbPFn8O/t7v9xoB04=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "3a004ab81c9c8799d9e156df6a2b41d8749b78e8",
+        "rev": "889081e3093a00bc3557aa942c722aefd877538f",
         "type": "github"
       },
       "original": {
@@ -118,28 +118,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
-        "nur": "nur",
-        "zen-browser": "zen-browser"
-      }
-    },
-    "zen-browser": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1779946062,
-        "narHash": "sha256-M/2bCPYjiBTkDNV29J/00z10RM3yYnL9X74RqAHDme0=",
-        "owner": "youwen5",
-        "repo": "zen-browser-flake",
-        "rev": "2e2c38ba20a3d614d0196e0aa44851547306e861",
-        "type": "github"
-      },
-      "original": {
-        "owner": "youwen5",
-        "repo": "zen-browser-flake",
-        "type": "github"
+        "nur": "nur"
       }
     }
   },
