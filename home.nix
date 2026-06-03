@@ -27,6 +27,7 @@
     fzf
     tree
     cava
+    btop
   ];
 
   # Git
