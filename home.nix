@@ -20,14 +20,14 @@
     yazi
     vlc
     spotify
-
+    heroic
+    
     # System
     wget
     p7zip
     fzf
     tree
     cava
-    btop
   ];
 
   # Git

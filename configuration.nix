@@ -46,6 +46,33 @@
 
   # X11
   services.xserver.enable = false;
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # Steam/Proton
+  };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+
+    # Driver propietario
+    open = false;
+
+    nvidiaSettings = true;
+
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+
+    prime = {
+      offload.enable = true;
+
+      nvidiaBusId = "PCI:1:0:0";
+      amdgpuBusId = "PCI:5:0:0";
+    };
+  };
+
+  services.switcherooControl.enable = true;
 
   # Asus
   services.asusd.enable = true;
@@ -104,13 +131,9 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   
-  # Fallback Packages
+  # System Packages
   environment.systemPackages = with pkgs; [
-   wget
-   p7zip
-   fzf
-   tree
-   cava
+
   ];
 
   # Nix Store Optimize
