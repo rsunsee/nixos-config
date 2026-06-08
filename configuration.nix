@@ -133,8 +133,11 @@
   
   # System Packages
   environment.systemPackages = with pkgs; [
-
+  xwayland-satellite
   ];
+  
+  # Flatpak
+  services.flatpak.enable = true;
 
   # Nix Store Optimize
   nix.settings.auto-optimise-store = true;

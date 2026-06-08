@@ -21,13 +21,15 @@
     vlc
     spotify
     heroic
-    
+    prismlauncher
+
     # System
     wget
     p7zip
     fzf
     tree
     cava
+    btop
   ];
 
   # Git
@@ -47,7 +49,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "/home/rsunsee/Pictures/fastfetch/nixowos";
+        source = "nixos";
       };
       display = {
         separator = " -> ";
