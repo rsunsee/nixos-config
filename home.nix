@@ -20,16 +20,24 @@
     yazi
     vlc
     spotify
-    heroic
-    prismlauncher
+    ollama
 
     # System
     wget
+    curl
     p7zip
     fzf
     tree
     cava
     btop
+    ripgrep # for lazyvim
+    fd # for lazyvim
+    luaPackages.tree-sitter-cli # for lazyvim
+    gcc # for lazyvim
+    luarocks # for lazyvim
+    lazygit # for lazyvim
+    python3 # for lazyvim
+
   ];
 
   # Git

@@ -119,6 +119,9 @@
   # Upower
   services.upower.enable = true;
   
+# for Noctalia-Shell
+  services.power-profiles-daemon.enable = true;
+  
   # Starship
   programs.starship.enable = true;
   
@@ -136,8 +139,10 @@
   xwayland-satellite
   ];
   
-  # Flatpak
-  services.flatpak.enable = true;
+  # Ollama Serve Automaticaly for Time Garden Template in Obsidian
+  services.ollama = {
+    enable = true;
+  };
 
   # Nix Store Optimize
   nix.settings.auto-optimise-store = true;
