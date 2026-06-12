@@ -9,7 +9,7 @@
   # User Packages
   home.packages = with pkgs; [
     # Browsers
-    nur.repos.trev.helium
+    firefox
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     obsidian
     yt-dlp
@@ -21,6 +21,8 @@
     vlc
     spotify
     ollama
+    cod
+    vscode
 
     # System
     wget
