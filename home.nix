@@ -21,8 +21,7 @@
     vlc
     spotify
     ollama
-    cod
-    vscode
+    discord
 
     # System
     wget
