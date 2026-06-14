@@ -119,7 +119,7 @@
   # Upower
   services.upower.enable = true;
   
-# for Noctalia-Shell
+  # PWD
   services.power-profiles-daemon.enable = true;
   
   # Starship

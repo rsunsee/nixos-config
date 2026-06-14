@@ -15,13 +15,14 @@
     yt-dlp
     kew
     glow
-    neovim
+    vim
     lmstudio
     yazi
     vlc
     spotify
     ollama
     discord
+    vscode
 
     # System
     wget
@@ -31,13 +32,7 @@
     tree
     cava
     btop
-    ripgrep # for lazyvim
-    fd # for lazyvim
-    luaPackages.tree-sitter-cli # for lazyvim
-    gcc # for lazyvim
-    luarocks # for lazyvim
-    lazygit # for lazyvim
-    python3 # for lazyvim
+    python3
 
   ];
 
