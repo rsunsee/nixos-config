@@ -13,6 +13,7 @@
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     obsidian
     yt-dlp
+    ffmpeg
     kew
     glow
     vim
@@ -21,8 +22,8 @@
     vlc
     spotify
     ollama
-    discord
     vscode
+    heroic
 
     # System
     wget
