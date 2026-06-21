@@ -23,7 +23,6 @@
     spotify
     ollama
     vscode
-    heroic
 
     # System
     wget
