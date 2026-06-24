@@ -99,7 +99,7 @@
     isNormalUser = true;
     shell = pkgs.bash;
     description = "rsunsee";
-    extraGroups = [ "networkmanager" "wheel" "bluetooth" ];
+    extraGroups = [ "networkmanager" "wheel" "bluetooth" "wireshark" ];
     packages = with pkgs; [
 
     ];
@@ -112,6 +112,9 @@
 
   # LocalSend
   programs.localsend.enable = true;
+
+  # Wireshark
+  programs.wireshark.enable = true;
 
   # Niri
   programs.niri.enable = true;
@@ -130,13 +133,14 @@
 
   # Virt Manager
   programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = ["rsunsee"];
+  users.groups.libvirtd.members = [ "rsunsee" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   
   # System Packages
   environment.systemPackages = with pkgs; [
   xwayland-satellite
+  wireshark
   ];
   
   # Ollama Serve Automaticaly for Time Garden Template in Obsidian
@@ -151,7 +155,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 4d";
+    options = "--delete-older-than 7d";
   };
 
   system.stateVersion = "25.11";

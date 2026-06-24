@@ -23,6 +23,7 @@
     spotify
     ollama
     vscode
+    opencode
 
     # System
     wget
