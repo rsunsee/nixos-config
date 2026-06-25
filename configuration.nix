@@ -113,9 +113,6 @@
   # LocalSend
   programs.localsend.enable = true;
 
-  # Wireshark
-  programs.wireshark.enable = true;
-
   # Niri
   programs.niri.enable = true;
 
@@ -140,7 +137,6 @@
   # System Packages
   environment.systemPackages = with pkgs; [
   xwayland-satellite
-  wireshark
   ];
   
   # Ollama Serve Automaticaly for Time Garden Template in Obsidian
