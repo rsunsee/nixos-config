@@ -21,9 +21,13 @@
     yazi
     vlc
     spotify
+    discord
     ollama
     vscode
     opencode
+    spek
+    xonotic
+    kew
 
     # System
     wget
@@ -34,6 +38,7 @@
     cava
     btop
     python3
+    unrar
 
   ];
 
