@@ -26,7 +26,6 @@
     vscode
     opencode
     spek
-    xonotic
     kew
 
     # System
