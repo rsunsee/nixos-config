@@ -1,6 +1,11 @@
 { config, pkgs, inputs, ... }:
 
 {
+  #Imports
+  imports = [
+    inputs.noctalia.homeModules.default
+  ];
+
   # User Config
   home.username = "rsunsee";
   home.homeDirectory = "/home/rsunsee";
@@ -10,7 +15,6 @@
   home.packages = with pkgs; [
     # Browsers
     firefox
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     obsidian
     yt-dlp
     ffmpeg
@@ -76,6 +80,25 @@
     };
   };
 
+  #Noctalia-Shell
+  programs.noctalia = {
+    enable = true;
+    
+    settings = {
+      theme = {
+        mode = "dark";
+        source = "builtin";
+        builtin = "Gruvbox";
+      };
+
+      wallpaper = {
+        enabled = true;
+        default.path = "./assets/wallpapers/wallhaven-pokg2e.png";
+
+      };
+    };
+  };
+  
   #Ghostty
   programs.ghostty = {
     enable = true;
@@ -83,10 +106,15 @@
     settings = {
 
       font-family = "IosevkaTerm Nerd Font Mono";
+
       font-size = 13;
+
       background-blur = true;
+
       background-opacity = 0.7;
+
       window-decoration = false;
+
       background-blur-radius = 20;
 
     };
