@@ -3,7 +3,7 @@
 {
   home.pointerCursor = {
 
-    gtk.enable = true;
+    enable = true;
 
     package = pkgs.bibata-cursors;
 

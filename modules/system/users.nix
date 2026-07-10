@@ -1,9 +1,10 @@
 {pkgs, ... }:
 
 {
+  programs.zsh.enable = true;
   users.users.rsunsee = {
     isNormalUser = true;
-    shell = pkgs.bash;
+    shell = pkgs.zsh;
 
     description = "rsunsee";
 

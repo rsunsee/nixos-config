@@ -11,6 +11,7 @@
     ./cursor.nix
     ./fonts.nix
     ./noctalia.nix
+    ./ohmyzsh.nix
   ];
 
   home.username = "rsunsee";
