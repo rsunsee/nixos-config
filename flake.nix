@@ -19,13 +19,13 @@
   };
 
   outputs = { self, nixpkgs, nur, home-manager, noctalia, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.rog-laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
       specialArgs = { inherit inputs; };
 
       modules = [
-        ./configuration.nix
+        ./hosts/rog-laptop
 
         { nixpkgs.overlays = [ nur.overlays.default ]; }
 
@@ -34,7 +34,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 	  home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.rsunsee = import ./home.nix;
+          home-manager.users.rsunsee = import ./home/default.nix;
         }
       ];
     };
