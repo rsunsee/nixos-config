@@ -13,7 +13,6 @@
 
   # User Packages
   home.packages = with pkgs; [
-    # Browsers
     firefox
     obsidian
     yt-dlp
@@ -25,10 +24,12 @@
     yazi
     vlc
     spotify
+    libreoffice-fresh
     discord
     ollama
     vscode
     opencode
+    zotero
     spek
     kew
 
@@ -39,7 +40,7 @@
     fzf
     tree
     cava
-    btop
+    htop
     python3
     unrar
 
