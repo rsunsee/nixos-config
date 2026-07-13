@@ -15,7 +15,7 @@
       wallpaper = {
         enabled = true;
 
-        default.path = ../assets/wallpapers/wallhaven-pokg2e.png;
+        default.path = ../assets/wallpapers/a_cartoon_of_a_lake_with_rocks_and_flags.jpg;
       };
     };
   };

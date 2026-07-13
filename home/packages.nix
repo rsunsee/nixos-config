@@ -31,7 +31,7 @@
     wget
     curl
     tree
-    htop
+    btop
     fzf
     yazi
     glow
