@@ -6,9 +6,9 @@
 
     settings = {
 
-      logo.source = "nixos";
+      logo.source = "/home/rsunsee/nixos-config/assets/ascii-art/angel";
 
-      display.separator = " -> ";
+      display.separator = " : ";
 
       modules = [
         "title"

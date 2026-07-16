@@ -22,6 +22,7 @@
     vscode
     python3
     opencode
+    woeusb-ng
 
     # AI
     ollama

@@ -3,7 +3,7 @@
 {
   imports = [
     inputs.noctalia.homeModules.default
-
+    ./niri
     ./packages.nix
     ./git.nix
     ./ghostty.nix

@@ -9,7 +9,7 @@
       theme = {
         mode = "dark";
         source = "builtin";
-        builtin = "Gruvbox";
+        builtin = "tokyo-night";
       };
 
       wallpaper = {
