@@ -9,7 +9,7 @@
       theme = {
         mode = "dark";
         source = "builtin";
-        builtin = "tokyo-night";
+        builtin = "Tokyo-Night";
       };
 
       wallpaper = {

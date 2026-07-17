@@ -19,10 +19,11 @@
     kew
 
     # Development
-    vscode
     python3
     opencode
+    docker
     woeusb-ng
+    vscodium
 
     # AI
     ollama
