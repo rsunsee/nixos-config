@@ -17,11 +17,14 @@
     ffmpeg
     spek
     kew
+    mpv
+    youtube-tui
 
     # Development
     python3
     opencode
     docker
+    lazydocker
     woeusb-ng
     vscodium
 
