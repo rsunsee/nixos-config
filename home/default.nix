@@ -12,6 +12,7 @@
     ./fonts.nix
     ./noctalia.nix
     ./ohmyzsh.nix
+    ./zen-browser.nix
   ];
 
   home.username = "rsunsee";

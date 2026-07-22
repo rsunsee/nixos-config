@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs,  ... }:
 
 {
   home.packages = with pkgs; [
@@ -7,7 +7,6 @@
     firefox
 
     # Office
-    libreoffice-fresh
     obsidian
     zotero
 
@@ -19,6 +18,7 @@
     kew
     mpv
     youtube-tui
+    ani-cli
 
     # Development
     python3
@@ -27,10 +27,6 @@
     lazydocker
     woeusb-ng
     vscodium
-
-    # AI
-    ollama
-    lmstudio
 
     # CLI
     wget

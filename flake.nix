@@ -2,22 +2,27 @@
   description = "nixos-btw";
 
   inputs = {
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # NIXPKGS
 
     nur.url = "github:nix-community/NUR"; # NUR
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake/beta";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager"; # HOME-MANAGER
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia/cachix"; # NOCTALIA
+    noctalia.url = "github:noctalia-dev/noctalia/cachix"; # NOCTALIA
 
-    };
   };
 
-  outputs = { self, nixpkgs, nur, home-manager, noctalia, ... }@inputs: {
+  outputs = { self, nixpkgs, nur, home-manager, noctalia, zen-browser, ... }@inputs: {
     nixosConfigurations.rog-laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
