@@ -3,9 +3,8 @@
 
   inputs = {
 
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # NIXPKGS
-
-    nur.url = "github:nix-community/NUR"; # NUR
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nur.url = "github:nix-community/NUR";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake/beta";
@@ -14,11 +13,11 @@
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager"; # HOME-MANAGER
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia.url = "github:noctalia-dev/noctalia/cachix"; # NOCTALIA
+    noctalia.url = "github:noctalia-dev/noctalia/cachix";
 
   };
 

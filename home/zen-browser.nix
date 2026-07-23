@@ -5,5 +5,13 @@
     inputs.zen-browser.homeModules.beta
   ];
 
-  programs.zen-browser.enable = true;
+  programs.zen-browser = {
+    enable = true;
+    setAsDefaultBrowser = true;
+    policies = {
+      DisableTelemetry = true;
+      DisableAppUpdate = false;
+
+    };
+  };
 }
