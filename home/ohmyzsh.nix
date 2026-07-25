@@ -3,6 +3,9 @@
 {
   programs.zsh = {
     enable = true;
+    shellAliases = {
+      ls = "eza";
+    };
 
     oh-my-zsh = {
       enable = true;

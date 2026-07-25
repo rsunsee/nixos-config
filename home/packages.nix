@@ -3,33 +3,32 @@
 {
   home.packages = with pkgs; [
 
-    # Browser
-    firefox
-
     # Office
     obsidian
     zotero
 
     # Multimedia
     vlc
-    spotify
     ffmpeg
     spek
     kew
     mpv
-    youtube-tui
+    discord
     ani-cli
 
     # Development
     python3
     opencode
     docker
-    lazydocker
     woeusb-ng
     vscodium
 
     # CLI
     wget
+    httrack
+    bat
+    eza
+    ripgrep
     curl
     tree
     btop
