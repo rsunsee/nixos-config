@@ -13,19 +13,19 @@
     spek
     kew
     mpv
-    discord
-    ani-cli
+    nur.repos.trev.helium
 
-    # Development
-    python3
-    opencode
-    docker
-    woeusb-ng
+    # Game Development
     vscodium
+    godot
+    ardour
+    aseprite
+    krita
+    audacity
 
     # CLI
+    python3
     wget
-    httrack
     bat
     eza
     ripgrep

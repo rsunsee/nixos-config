@@ -8,9 +8,9 @@
 
     settings = {
 
-      font-family = "IosevkaTerm Nerd Font Mono";
+      font-family = "Monocraft";
 
-      font-size = 13;
+      font-size = 12;
 
       background-opacity = 0.7;
 

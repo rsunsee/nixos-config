@@ -7,15 +7,15 @@
 
     defaultFonts = {
       monospace = [
-        "Iosevka Nerd Font Mono"
+        "Monocraft"
       ];
 
       sansSerif = [
-        "Iosevka Nerd Font Propo"
+        "Monocraft"
       ];
 
       serif = [
-        "Iosevka Nerd Font Propo"
+        "Monocraft"
       ];
     };
   };

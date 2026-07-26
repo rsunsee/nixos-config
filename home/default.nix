@@ -9,7 +9,6 @@
     ./ghostty.nix
     ./fastfetch.nix
     ./cursor.nix
-    ./fonts.nix
     ./noctalia.nix
     ./ohmyzsh.nix
     ./zen-browser.nix
