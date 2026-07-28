@@ -3,8 +3,8 @@
 {
   imports = [
     inputs.noctalia.homeModules.default
-    ./niri
     ./packages.nix
+    ./sway.nix
     ./git.nix
     ./ghostty.nix
     ./fastfetch.nix

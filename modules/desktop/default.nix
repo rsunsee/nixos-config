@@ -4,6 +4,6 @@
   imports = [
     ./ly.nix
     ./localsend.nix
-    ./niri.nix
+    ./sway.nix
   ];
 }

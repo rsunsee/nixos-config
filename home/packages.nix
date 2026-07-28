@@ -13,11 +13,12 @@
     spek
     kew
     mpv
+    kdePackages.dolphin
     nur.repos.trev.helium
 
     # Game Development
     vscodium
-    godot
+    godot_4_7
     ardour
     aseprite
     krita
