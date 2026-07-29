@@ -9,7 +9,6 @@
 
     # System
     noctalia
-    noctalia-shell
 
     # Multimedia
     vlc
@@ -21,7 +20,7 @@
     nur.repos.trev.helium
 
     # Game Development
-    vscodium
+    zed-editor
     godot_4_7
     ardour
     aseprite

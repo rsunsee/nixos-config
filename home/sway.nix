@@ -26,11 +26,9 @@
       };
 
       startup = [
-        { command = "noctalia-shell"; }
+        { command = "noctalia"; }
       ];
-      
       bars = [];
-    
     };
   };
 }
