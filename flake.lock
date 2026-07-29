@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785168662,
-        "narHash": "sha256-kGJTc0oEUQuEwV66lSlMxYtOEtpk9N/HS43k+rFAvs8=",
+        "lastModified": 1785306346,
+        "narHash": "sha256-DScBkW0fOgpGPK2trNoX3ryLTlaC14+gglFo/BhGJ4g=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cbb77679b3d992c8b62f884cd3a84af534a28621",
+        "rev": "e705714e918c3b11affcdd15db2cbe3a070420a0",
         "type": "github"
       },
       "original": {
@@ -57,35 +57,23 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1784796856,
-        "narHash": "sha256-vwxWgF+Gj276WznzGb1LxGsK/39HaQwgQXiU3EkC844=",
-        "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-        "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
-      }
-    },
-    "noctalia": {
+    "noctalia-greeter": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1785187597,
-        "narHash": "sha256-lBHH/pKvCy2ffYToKLNO3/TW4q/y3gOLFIJsHthr3S0=",
+        "lastModified": 1785316169,
+        "narHash": "sha256-7iBE9aITWeYBC5YdRcY9F9y29dtlNhwg7eLar+CYLgc=",
         "owner": "noctalia-dev",
-        "repo": "noctalia",
-        "rev": "9c4e96b9beaa99590c224010952d0d8564bfc51c",
+        "repo": "noctalia-greeter",
+        "rev": "d6275cbcb5b9acae2348bed16e358aa6c2cf8188",
         "type": "github"
       },
       "original": {
         "owner": "noctalia-dev",
-        "ref": "cachix",
-        "repo": "noctalia",
+        "repo": "noctalia-greeter",
         "type": "github"
       }
     },
@@ -97,11 +85,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785193039,
-        "narHash": "sha256-sCQJ/96KTCas3XWPe0FnaX1K+SpWNjm6/zXRQqa/Plk=",
+        "lastModified": 1785337301,
+        "narHash": "sha256-wK3+dbTlmQLyOF+/EPpMjJ+k7iTlrgYb6E0zWNXKNPc=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "b1334582ea400ffa0a0f452a9b30f61591d1a872",
+        "rev": "6984e4408144a631ac7a2b07cbc75d4e4f9f7b07",
         "type": "github"
       },
       "original": {
@@ -114,7 +102,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "noctalia": "noctalia",
+        "noctalia-greeter": "noctalia-greeter",
         "nur": "nur",
         "zen-browser": "zen-browser"
       }

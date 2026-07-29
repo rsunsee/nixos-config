@@ -9,6 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia-greeter = {
+      url = "github:noctalia-dev/noctalia-greeter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake/beta";
@@ -20,18 +24,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    noctalia.url = "github:noctalia-dev/noctalia/cachix";
-
   };
 
-  outputs = { self, nixpkgs, nur, home-manager, noctalia, zen-browser, ... }@inputs: {
+  outputs = { self, nixpkgs, nur, home-manager, zen-browser, noctalia-greeter, ... }@inputs: {
     nixosConfigurations.rog-laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       
       specialArgs = { inherit inputs; };
 
       modules = [
+        noctalia-greeter.nixosModules.default
+        
         ./hosts/rog-laptop
 
         { nixpkgs.overlays = [ nur.overlays.default ]; }

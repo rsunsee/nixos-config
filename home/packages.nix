@@ -7,6 +7,10 @@
     obsidian
     zotero
 
+    # System
+    noctalia
+    noctalia-shell
+
     # Multimedia
     vlc
     ffmpeg

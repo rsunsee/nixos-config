@@ -2,14 +2,12 @@
 
 {
   imports = [
-    inputs.noctalia.homeModules.default
     ./packages.nix
     ./sway.nix
     ./git.nix
     ./ghostty.nix
     ./fastfetch.nix
     ./cursor.nix
-    ./noctalia.nix
     ./ohmyzsh.nix
     ./zen-browser.nix
   ];

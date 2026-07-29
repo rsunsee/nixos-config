@@ -6,7 +6,7 @@
 
     settings = {
 
-      logo.source = "/home/rsunsee/nixos-config/assets/ascii-art/angel";
+      logo.source = "/home/rsunsee/nixos-config/assets/ascii-art/cat.txt";
 
       display.separator = " : ";
 

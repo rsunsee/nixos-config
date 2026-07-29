@@ -10,7 +10,7 @@
       terminal = "ghostty";
 
       window = {
-        border = 0;
+        border = 2;
         titlebar = false;
       };
 
@@ -26,7 +26,7 @@
       };
 
       startup = [
-        { command = "noctalia"; }
+        { command = "noctalia-shell"; }
       ];
       
       bars = [];
