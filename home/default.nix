@@ -3,13 +3,13 @@
 {
   imports = [
     ./packages.nix
-    ./sway.nix
     ./git.nix
     ./ghostty.nix
     ./fastfetch.nix
     ./cursor.nix
     ./ohmyzsh.nix
     ./zen-browser.nix
+    ./zed-editor.nix
   ];
 
   home.username = "rsunsee";

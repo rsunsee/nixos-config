@@ -9,7 +9,6 @@
 
     # System
     noctalia
-    kitty #for hyprland
 
     # Multimedia
     vlc
@@ -19,10 +18,8 @@
     mpv
     kdePackages.dolphin
     nur.repos.trev.helium
-    discord
 
     # Game Development
-    zed-editor
     godot_4_7
     ardour
     aseprite
@@ -39,7 +36,6 @@
     tree
     btop
     fzf
-    nil
     nixd
     yazi
     glow

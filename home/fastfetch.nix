@@ -6,7 +6,7 @@
 
     settings = {
 
-      logo.source = "/home/rsunsee/nixos-config/assets/ascii-art/nocturnal.txt";
+      logo.source = "nixos";
 
       display.separator = " : ";
 
