@@ -9,6 +9,7 @@
 
     # System
     noctalia
+    kitty #for hyprland
 
     # Multimedia
     vlc
@@ -18,6 +19,7 @@
     mpv
     kdePackages.dolphin
     nur.repos.trev.helium
+    discord
 
     # Game Development
     zed-editor
@@ -37,6 +39,8 @@
     tree
     btop
     fzf
+    nil
+    nixd
     yazi
     glow
     yt-dlp
